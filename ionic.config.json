@@ -1,0 +1,7 @@
+{
+  "name": "webbsoft",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

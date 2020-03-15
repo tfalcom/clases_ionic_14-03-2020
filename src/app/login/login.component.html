@@ -1,0 +1,37 @@
+<ion-content>
+  <ion-row>
+    <ion-col size="12">
+      <h1>Sistema de logueo</h1>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12">
+      <label>usuario</label>
+    </ion-col>
+    <ion-col size="12">
+      <ion-input
+        type="text"
+        placeholder="usuario"
+        [(ngModel)]="usuario.username"
+      ></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="12">
+      <label>password</label>
+    </ion-col>
+    <ion-col size="12">
+      <ion-input
+        type="password"
+        placeholder="password"
+        [(ngModel)]="usuario.password"
+      ></ion-input>
+    </ion-col>
+  </ion-row>
+  <ion-button (click)="login()" expand="block" shape="round">
+    Login
+  </ion-button>
+  <div style="clear:both">
+    <div style="color:red">{{ errorMessage }}</div>
+  </div>
+</ion-content>
